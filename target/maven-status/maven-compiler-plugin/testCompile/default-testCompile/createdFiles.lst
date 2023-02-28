@@ -1,0 +1,13 @@
+testsPackage\SearchTest.class
+pageObjects\HomePage.class
+testsPackage\BaseTest.class
+pageObjects\FrgPassPage.class
+pageObjects\SubscriptionPage.class
+testsPackage\HomePageTest.class
+pageObjects\LoginPage.class
+pageObjects\BasePage.class
+pageObjects\PaymentPage.class
+testsPackage\SubscriptionTest.class
+testsPackage\PortfolioTest.class
+pageObjects\PortfolioPage.class
+testsPackage\LoginTest.class

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="testsPackage.SubscriptionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="tc_14_buyMonthlyPlan"/>
+        </methods>
+      </class> <!-- testsPackage.SubscriptionTest -->
+      <class name="testsPackage.PortfolioTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tc_10_saveButton"/>
+          <include name="tc_09_addRowsButton"/>
+          <include name="tearDown"/>
+          <include name="tc_08_fillLine2"/>
+          <include name="tc_07_createNewPortfolio"/>
+          <include name="tc_11_deleteButton"/>
+        </methods>
+      </class> <!-- testsPackage.PortfolioTest -->
+      <class name="testsPackage.SearchTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tc_13_searchFuture1" invocation-numbers="0 1 2"/>
+          <include name="tearDown"/>
+          <include name="tc_12_searchStock1" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- testsPackage.SearchTest -->
+      <class name="testsPackage.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tc_05_frgtPasswordLink"/>
+          <include name="tc_06_correctLoginTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testsPackage.LoginTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
