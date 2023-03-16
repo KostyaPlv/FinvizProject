@@ -1,16 +1,14 @@
 package testsPackage;
 
 import static org.testng.Assert.assertEquals;
-
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import pageObjects.FrgPassPage;
 import pageObjects.LoginPage;
 
 public class LoginTest extends BaseTest {
 
-	@Test(dataProvider = "getData")
+	@Test(description = "Login with wrong credentials",dataProvider = "getData")
 	public void tc_04_wrongLoginTest(String user, String password) {
 		LoginPage lp = new LoginPage(driver);
 		lp.login(user, password);
@@ -19,7 +17,7 @@ public class LoginTest extends BaseTest {
 		assertEquals(actual, expected);
 	}
 
-	@Test
+	@Test(description = "Password recovery Link")
 	public void tc_05_frgtPasswordLink() {
 		LoginPage lp = new LoginPage(driver);
 		FrgPassPage fp = new FrgPassPage(driver);
@@ -33,7 +31,7 @@ public class LoginTest extends BaseTest {
 		driver.navigate().back();
 	}
 
-	@Test
+	@Test(description = "Login with correct credentials")
 	public void tc_06_correctLoginTest() {
 		LoginPage lp = new LoginPage(driver);
 		lp.login("desirekot@gmail.com", "$dhMCA@7SRhkx9^u");
