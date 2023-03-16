@@ -7,7 +7,7 @@ import pageObjects.HomePage;
 
 public class HomePageTest extends BaseTest {
 
-	@Test
+	@Test(description = "Canvas of stocks by sectors")
 	public void tc_01_stockCanvasButton() {
 		HomePage hp = new HomePage(driver);
 		hp.canvasBtn();
@@ -17,13 +17,13 @@ public class HomePageTest extends BaseTest {
 		driver.navigate().back();
 	}
 
-	@Test
+	@Test(description = "Bottom link in Headlines column")
 	public void tc_02_lastArticleLink() {
 		HomePage hp = new HomePage(driver);
 		hp.articleBtn();
 	}
 
-	@Test
+	@Test(description = "Help tag functionality")
 	public void tc_03_helpButton() {
 		HomePage hp = new HomePage(driver);
 		hp.helpBtn();
