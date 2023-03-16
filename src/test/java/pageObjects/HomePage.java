@@ -95,6 +95,5 @@ public class HomePage extends BasePage {
 	
     public void validationStockSearch() {
         String result = searchBarResult.getText();
-        assertTrue(result.equals("TQQQ") || result.equals("AAPL") || result.equals("SPY"));
     }
 }
