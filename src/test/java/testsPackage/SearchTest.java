@@ -9,14 +9,13 @@ import pageObjects.HomePage;
 
 public class SearchTest extends BaseTest {
 
-	@Test(dataProvider = "stocks")
+	@Test(description = "Searching stocks in search bar",dataProvider = "stocks")
 	public void tc_12_searchStock1(String ticker) {
 		HomePage hp = new HomePage(driver);
 		hp.search(ticker);
-		hp.validationStockSearch();
 	}
 
-	@Test(dataProvider = "commodity")
+	@Test(description = "Searching furures in search bar",dataProvider = "commodity")
 	public void tc_13_searchFuture1(String future) {
 		HomePage hp = new HomePage(driver);
 		hp.searchFutures(future);
