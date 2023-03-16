@@ -1,9 +1,7 @@
 package testsPackage;
 
 import static org.testng.Assert.assertEquals;
-
 import org.testng.annotations.Test;
-
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.PaymentPage;
@@ -11,7 +9,7 @@ import pageObjects.SubscriptionPage;
 
 public class SubscriptionTest extends BaseTest {
 
-	@Test
+	@Test(description = "Subscribe for a monthly plan")
 	public void tc_14_buyMonthlyPlan() {
 		SubscriptionPage sp = new SubscriptionPage(driver);
 		LoginPage lp = new LoginPage(driver);
